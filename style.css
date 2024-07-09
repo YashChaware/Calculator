@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Roboto", sans-serif;
+  margin-top: 4vh;
+  height: 92vh;
+  margin-bottom: 4vh;
+  
+}
+
+/* Make the calculator a fixed size, but responsive */
+.container {
+  align-items: center;
+  width: 320px; /* fixed width */
+  height: 480px; /* updated height to achieve 2:3 ratio */
+  max-width: 100%; /* make it responsive */
+  margin: 2vh auto; /* center it horizontally */
+  padding: 20px; /* add some padding */
+  border: 2px solid black; /* add a border */
+  border-radius: 10px; /* add a border radius */
+  background-color: rgb(183, 183, 184);
+  box-shadow:  0px -5px 5px gray,
+  -5px 0px 5px gray,
+  0px 5px 5px gray,
+  5px 0px 5px gray; /* add a box shadow */
+}
+
+
+
+.display input {
+  height: 80px; /* updated height to fit within the container */
+  width: 100%; /* make it responsive */
+  font-size: 24px; /* adjust font size */
+  /* padding: 10px; add some padding */
+  border: 1px solid black; /* add a border */
+  box-shadow: 5px 5px 5px gray;
+  text-align: right;
+  background-color: #8a8fa0;
+  border-radius: 10px; /* add a border radius */
+}
+
+.buttons {
+  height: 80%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-top: 20px; /* add some margin to separate from display input */
+  background-color: #b6cde3;
+  border-radius: 2vh;
+  box-shadow: inset 0px -5px 5px gray,
+   inset -5px 0px 5px gray,
+   inset 0px 5px 5px gray,
+   inset 5px 0px 5px gray;
+  border: 1px solid black;
+}
+
+/* Make the buttons a fixed size, but responsive */
+.button {
+  background-color: #dfe5ea;
+  width:55px; /* updated width to fit within the container */
+  height:70%; /* updated height to fit within the container */
+  font-size: 18px; /* adjust font size */
+  padding: 10px; /* add some padding */
+  border: 1px solid black; /* add a border */
+  border-radius: 10px; /* add a border radius */
+  margin: 7px; /* add some margin */
+  cursor: pointer;
+  box-shadow: 5px 5px gray;
+}
+.buttons :hover {
+  background-color: #a0c3e7;
+}
+
+#operator {
+  background-color: #f2af3c;
+}
+
+#operator:hover {
+  background-color: #f09e10;
+}
